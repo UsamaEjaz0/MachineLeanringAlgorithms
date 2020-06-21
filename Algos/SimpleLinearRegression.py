@@ -10,9 +10,9 @@ print(pima)
 pima.plot(kind="scatter", x="skin", y="bmi")
 x_train, x_test, y_train, y_test = train_test_split(pima.skin, pima.bmi)
 
-#plt.scatter(x_train, y_train, label="Training Data", color='r')
-#plt.scatter(x_test, y_test, label="Testing Data", color='b')
-#plt.legend()
+plt.scatter(x_train, y_train, label="Training Data", color='r')
+plt.scatter(x_test, y_test, label="Testing Data", color='b')
+plt.legend()
 
 
 lr = LinearRegression()
